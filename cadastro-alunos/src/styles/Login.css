@@ -1,0 +1,52 @@
+:root{
+    --cor-principal: #ffffff;
+    --cor-letras: #ffffff;
+    --fonte-padrao: 'Arial', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.body-card {
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #000000;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+    height: 40px;
+    background-color: #04012d;
+    color: var(--cor-letras);
+    cursor: pointer;
+}
+
+.card-titulo {
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-letras)
+}
+
+.fields-email,
+.fields-senha,
+.btn-login {
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-letras)
+}
