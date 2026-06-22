@@ -1,0 +1,25 @@
+{
+  "alunos": [
+    {
+      "nome": "Vinicius",
+      "email": "viniciusleoncio@gmail.com",
+      "senha": "237398",
+      "id": "LOaSPjqv78A"
+    },
+    {
+      "nome": "Patrick ",
+      "email": "patrick@gmail.com",
+      "idade": "20",
+      "senha": "358691",
+      "id": "inEmuwfYyrw"
+    },
+    {
+      "nome": "Caio ",
+      "email": "caio@gmail.com",
+      "idade": "20",
+      "senha": "123456",
+      "id": "bfO7VlRSo6o"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
