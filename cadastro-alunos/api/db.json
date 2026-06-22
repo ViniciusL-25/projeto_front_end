@@ -6,6 +6,13 @@
       "idade": "21",
       "senha": "123456",
       "id": "3DLmKopDniA"
+    },
+    {
+      "nome": "Isabela Damacena",
+      "email": "isabela.quinta@iesb.edu.br",
+      "idade": "20",
+      "senha": "Damacena",
+      "id": "FPESftJe1ag"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
