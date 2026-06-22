@@ -29,3 +29,30 @@ h1{
 .card-nei p {
     margin: 0;
 }
+
+.btn-logout {
+    margin-top: 20px;
+    padding: 10px 16px;
+
+    background-color: #ff0000;
+    color: #fff;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.btn-logout:active {
+    transform: scale(0.98);
+}

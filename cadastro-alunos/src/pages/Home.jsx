@@ -45,6 +45,10 @@ function Home() {
   <>
     <h1>Lista de Alunos</h1>
 
+    <button onClick={logout} className="btn-logout">
+          Sair da Conta
+        </button>
+
     <div className="card">
       {alunos.map((aluno) => (
         <div className="card-nei" key={aluno.id}>
@@ -56,9 +60,9 @@ function Home() {
             Excluir 
         </button>
 
-        <button onClick={logout}>
-            Sair
-        </button>
+        <button onClick={() => excluirAluno(aluno.id)}>
+              Excluir 
+            </button>
 
        
 
