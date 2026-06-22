@@ -60,8 +60,8 @@ function Home() {
             Excluir 
         </button>
 
-        <button onClick={() => excluirAluno(aluno.id)}>
-              Excluir 
+        <button onClick={() => logout (aluno.id)}>
+              Sair
             </button>
 
        
