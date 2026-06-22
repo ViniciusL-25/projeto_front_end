@@ -1,12 +1,4 @@
 {
-  "alunos": [
-    {
-      "nome": "Vinicius",
-      "email": "jack30games@gmail.com",
-      "idade": "757675757",
-      "senha": "frttrwrts",
-      "id": "c-2RgLHVS4w"
-    }
-  ],
+  "alunos": [],
   "$schema": "./node_modules/json-server/schema.json"
 }
