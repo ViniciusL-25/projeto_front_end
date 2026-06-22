@@ -1,5 +1,7 @@
 import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 import '../styles/Login.css';
+import '../pages/Cadastro';
 
 
 
@@ -60,6 +62,11 @@ function Login(){
                             <div className="btn-login">
                                 <button type="submit">Entrar</button>
                             </div>
+
+                            <p>
+                                Não possui uma conta? <Link to="/cadastro">Cadastra-se</Link>
+
+                            </p>
                             
                         </form>
 

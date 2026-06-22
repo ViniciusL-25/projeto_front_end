@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import './Cadastro.css'
+import '../styles/Cadastro.css';
+import { useNavigate } from 'react-router-dom'
 
 export default function Cadastro() {
   const [formData, setFormData] = useState({
@@ -9,16 +10,31 @@ export default function Cadastro() {
     senha: ''
   });
 
+
+  const navigate = useNavigate();
+  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Dados enviados para o backend:', formData);
-    alert('Cadastro realizado com sucesso!');
-  };
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const response = await fetch('http://localhost:3000/alunos', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  });
+
+  if(response.ok) {
+  alert('Cadastro realizado com sucesso!');
+  navigate('/login');
+ }
+};
 
   return (
     <div className="cadastro-container">
